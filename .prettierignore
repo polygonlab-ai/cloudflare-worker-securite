@@ -1,0 +1,9 @@
+node_modules/
+coverage/
+.wrangler/
+package-lock.json
+# Hand-formatted documents: the PolygonLab signature is compared byte for byte.
+*.md
+LICENSE
+# Repository sheet of the publishing tool, kept in its house format.
+depot.json

@@ -1,0 +1,21 @@
+# Dependencies and generated files
+/node_modules/
+/coverage/
+/.wrangler/
+/dist/
+/vendor/
+
+# Secrets: never in a repository
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+*.key
+*.pem
+
+# Editors and systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

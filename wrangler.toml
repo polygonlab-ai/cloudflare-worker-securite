@@ -1,0 +1,15 @@
+# Example Wrangler configuration. No account or zone identifier is needed here:
+# `npx wrangler login` links Wrangler to your Cloudflare account.
+name = "worker-securite"
+main = "src/index.ts"
+compatibility_date = "2026-11-01"
+
+# The Worker is meant to run in front of your sites only, never on a workers.dev address.
+workers_dev = false
+preview_urls = false
+
+# Uncomment and adapt: one route per site, on a zone proxied by Cloudflare (orange cloud).
+# routes = [
+#   { pattern = "www.example.com/*", zone_name = "example.com" },
+#   { pattern = "*.example.com/*", zone_name = "example.com" },
+# ]

@@ -1,0 +1,56 @@
+{
+  "name": "@polygonlab/cloudflare-worker-securite",
+  "version": "0.1.0",
+  "description": "Cloudflare Worker that adds security headers per host, keeps the origin CSP when asked, and serves a maintenance page.",
+  "private": true,
+  "license": "MIT",
+  "author": "PolygonLab (https://polygonlab.ai)",
+  "homepage": "https://github.com/polygonlab-ai/cloudflare-worker-securite#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polygonlab-ai/cloudflare-worker-securite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/polygonlab-ai/cloudflare-worker-securite/issues"
+  },
+  "keywords": [
+    "cloudflare",
+    "cloudflare-workers",
+    "security-headers",
+    "csp",
+    "content-security-policy",
+    "hsts",
+    "typescript",
+    "web-security",
+    "maintenance-page",
+    "ip-blocking"
+  ],
+  "type": "module",
+  "main": "src/index.ts",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run typecheck && npm run lint && npm run format:check && npm run coverage"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "^1.8.2",
+    "@cloudflare/workers-types": "^5.20261113.1",
+    "@eslint/js": "^10.0.1",
+    "@vitest/coverage-istanbul": "^5.1.0",
+    "eslint": "^10.15.0",
+    "prettier": "^3.10.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.2",
+    "vitest": "^5.1.0",
+    "wrangler": "^4.162.0"
+  }
+}
